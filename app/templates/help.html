@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>USO DE API</h1>
+        <h2>1. Login:</h2>
+        -url de petición: http://localhost:5000/burro/login <br>
+        -datos a enviar por post: <br>
+        <ul>
+            <li>codalu</li>
+            <li>pass_alu</li>
+        </ul>
+        -respuesta de server:<br>
+        <img src="{{url_for('static', filename='img/login.png')}}" alt=""><br>
+        -respuesta de server cuando no encuentra al alumno en la base de datos:<br>
+        <img src="{{url_for('static', filename='img/login_error.png')}}" alt="">
+
+        <h2>2. Registrarse:</h2>
+        -url de petición: http://localhost:5000/burro/registro <br>
+        -datos a enviar por post: <br>
+        <ul>
+            <li>nomalu</li>
+            <li>apealu</li>
+            <li>sexo</li>
+            <li>codalu</li>
+            <li>pass_alu</li>
+            <li>correo_alu</li>
+            <li>direc_alu</li>
+            <li>telef_alu</li>
+        </ul>
+        -respuesta de server:<br>
+        <img src="{{url_for('static', filename='img/registrarse.png')}}" alt=""><br>
+        -respuesta de server cuando el alumno ya esta registrado, se valida por su codigo de alumno:<br>
+        <img src="{{url_for('static', filename='img/registrarse_error.png')}}" alt=""><br>
+    </body>
+</html>
